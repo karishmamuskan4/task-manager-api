@@ -16,8 +16,6 @@ const getTaskById = (req, res) => {
   res.status(200).json(task);
 };
 
-   
-
 const createTask = (req, res) => {
   const { title } = req.body;
 
@@ -27,7 +25,6 @@ const createTask = (req, res) => {
   };
 
   tasks.push(newTask);
-
   res.status(201).json(newTask);
 };
 
